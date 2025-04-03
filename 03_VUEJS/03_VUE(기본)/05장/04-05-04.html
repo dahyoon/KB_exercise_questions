@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 처리</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>05 이벤트 처리</h1>
+      <h2>5.3 이벤트 핸들러 메서드</h2>
+      <ul>
+        <li>
+          복잡한 기능은 메서드에 미리 작성해두고, v-on 디렉티브로 참조해서
+          이벤트 처리 수행
+        </li>
+        <hr
+          style="
+            border: none; /* 기본 테두리 제거 */
+            border-top: 2px dotted #000;
+          "
+        />
+        <h3>(continued 1)</h3>
+        <li>간단한 이벤트 처리 메서드는 인라인으로 템플릿에 작성 가능!</li>
+        <hr
+          style="
+            border: none; /* 기본 테두리 제거 */
+            border-top: 2px dotted #000;
+          "
+        />
+        <h3>(continued 2)</h3>
+        <li>
+          한 줄일 경우 2가지 방법으로 개선 가능
+          <ol>
+            <li>인라인 이벤트로 처리</li>
+            <ul>
+              <li>
+                &lt;input id="a" type="text" :value="name" @input="this.name =
+                $event.target.value"&gt;
+              </li>
+            </ul>
+            <li>인라인 코드로 화살표 함수 등록</li>
+            <ul>
+              <li>
+                주의: 전통적인 함수가 아닌 화살표 함수로 등록해야 this가
+                컴포넌트 인스턴스를 참조함
+              </li>
+            </ul>
+          </ol>
+        </li>
+      </ul>
+
+      <hr />
+      <input
+        type="text"
+        id="a"
+        :value="name"
+        @input="(e) => this.name = e.target.value"
+      />
+      <br />
+      입력하신 이름 : <span>{{name}}</span>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { name: "" };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

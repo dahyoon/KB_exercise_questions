@@ -18,18 +18,18 @@
     <script src="https://unpkg.com/vue"></script>
     <script>
       const vm = Vue.createApp({
-        name: 'App',
+        name: "App",
         methods: {
           ctxStop(e) {
             e.preventDefault(); // 기본 행동 차단
           },
           confirmFB(e) {
-            if (!confirm('페이스북으로 이동할까요?')) {
+            if (!confirm("페이스북으로 이동할까요?")) {
               e.preventDefault(); // 취소 버튼 클릭 시 기본 행동 차단
             }
           },
         },
-      }).mount('#app');
+      }).mount("#app");
     </script>
   </body>
 </html>

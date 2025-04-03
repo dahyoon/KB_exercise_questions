@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이벤트 처리</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>05 이벤트 처리</h1>
+      <h2>5.1 이벤트 개요</h2>
+      <ul>
+        <li>
+          4장까지는 계산형 속성 (computed), 메서드 (methods), 관찰 속성
+          (watch)을 이용해 동적 UI 작성해봄
+        </li>
+        <li>
+          그러나 동적 UI는 HTML 요소에서 발생하는 이벤트 처리를 통해 구현되는
+          경우가 더 많음
+        </li>
+        <li>5장에서는 Vue의 이벤트에 대해 배울 것</li>
+      </ul>
+      <h2>5.2 인라인 이벤트 처리</h2>
+      <h3>v-on 디렉티브</h3>
+      <ul>
+        <li>
+          문법:
+          <ul>
+            <li><b>v-on:[이벤트이름]="표현식"</b></li>
+            <li><b>@[이벤트이름]="표현식"</b></li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+      금액 : <input type="text" v-model.number="amount" /><br />
+      <button v-on:click="balance += parseInt(amount)">입금</button>
+      <button v-on:click="balance -= parseInt(amount)">인출</button><br />
+      <h3>계좌 잔고 : {{balance}}</h3>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { amount: 0, balance: 0 };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
