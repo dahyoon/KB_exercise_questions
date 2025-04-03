@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic</title>
+    <script>
+      let date = new Date();
+      let cur_hour = date.getHours();
+      if (cur_hour < 5) {
+        alert('잠을 자렴...');
+      } else if (5 <= cur_hour && cur_hour < 7) {
+        alert('준비');
+      } else if (7 <= cur_hour && cur_hour < 9) {
+        alert('출근');
+      } else if (9 <= cur_hour && cur_hour < 12) {
+        alert('빈둥 빈둥');
+      } else if (12 <= cur_hour && cur_hour < 14) {
+        alert('식사');
+      } else {
+        alert('여러가지 업무를 수행합니다.');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

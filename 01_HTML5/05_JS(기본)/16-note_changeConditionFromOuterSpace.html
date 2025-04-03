@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic</title>
+    <script>
+      // 변수 선언
+      let start = new Date().getTime(); // 1741757402899 (1970년 1월 1일 00:00:00 UTC부터의 밀리초(ms) 값 반환)
+      let count = 0;
+
+      // while 수행 - 1초 동안 while 루프의 반복 횟수 측정
+      while (start + 1000 > new Date().getTime()) {
+        count++;
+      }
+      // 경고창 출력
+      alert(count + '만큼 반복했습니다.');
+    </script>
+  </head>
+  <body></body>
+</html>

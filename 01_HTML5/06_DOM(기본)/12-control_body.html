@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic</title>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 속성 지정
+        document.body.setAttribute('data-custom', 'value');
+        document.body.setAttribute('style', 'border: 1px solid lightcoral;');
+        // 속성 추출
+        let dataCustom = document.body.getAttribute('data-custom');
+        alert(dataCustom);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>12-control_body</h1>
+  </body>
+</html>

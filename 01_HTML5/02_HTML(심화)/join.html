@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>join</title>
+    <style>
+      .input_list {
+        font-weight: bold;
+        text-align: center;
+      }
+      label[for='userId'] {
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="userId" class="input_list">사용자 ID</label>
+            </td>
+            <td><input id="userId" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="password" class="input_list">비밀번호</label></td>
+            <td><input id="password" type="password" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pw_confirm" class="input_list">비밀번호 확인</label>
+            </td>
+            <td><input type="password" id="pw_confirm" /></td>
+          </tr>
+          <tr>
+            <td><label for="name" class="input_list">이름</label></td>
+            <td><input type="text" id="name" /></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="input_list">성별</span>
+            </td>
+            <td>
+              <input type="radio" name="gender" id="man" value="m" /><label
+                for="man"
+                >남</label
+              >
+              <input type="radio" name="gender" id="woman" value="w" /><label
+                for="woman"
+                >여</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="input_list">취미</span>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="hobby"
+                id="soccer"
+                value="soccer"
+              /><label for="soccer">축구</label>
+              <input
+                type="checkbox"
+                name="hobby"
+                id="baseball"
+                value="baseball"
+              /><label for="baseball">야구</label>
+              <input
+                type="checkbox"
+                name="hobby"
+                id="volleyball"
+                value="volleyball"
+              /><label for="volleyball">배구</label>
+              <input
+                type="checkbox"
+                name="hobby"
+                id="basketball"
+                value="basketball"
+              /><label for="basketball">농구</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email" class="input_list">email</label>
+            </td>
+            <td><input id="email" type="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="role" class="input_list">역할</label></td>
+            <td>
+              <select name="role" id="role">
+                <option value="ADMIN">ADMIN</option>
+                <option value="관리자">관리자</option>
+                <option value="일반회원">일반회원</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="확인" />
+        <input type="reset" value="다시쓰기" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터 변경 시 주의사항</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>데이터 변경 시 주의사항</h1>
+      <h2>Proxy 주의</h2>
+      <hr />
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="contact in contacts" :key="contact.no">
+            <td>{{contact.no}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var model = {
+        contacts: [
+          { no: 1011, name: "RM", tel: "010-2345-3325" },
+          { no: 1012, name: "정국", tel: "010-2525-3325" },
+          { no: 1013, name: "슈가", tel: "010-2445-4425" },
+          { no: 1014, name: "제이홉", tel: "010-1123-2221" },
+          { no: 1015, name: "뷔", tel: "010-0223-2221" },
+          { no: 1016, name: "지민", tel: "010-2932-3333" },
+          { no: 1017, name: "진", tel: "010-1114-2222" },
+        ],
+      };
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return model;
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

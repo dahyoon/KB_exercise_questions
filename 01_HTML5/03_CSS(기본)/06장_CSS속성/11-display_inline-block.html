@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Display Property</title>
+    <style>
+      #box {
+        display: inline-block;
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        /* float: left; 사용해도 같으나, 다른 태그들이 영향을 받으므로 특정 태그만 원할 경우에는 사용 권장하지 않음 */
+      }
+    </style>
+  </head>
+  <body>
+    <span>더미 객체</span>
+    <div id="box">대상 객체</div>
+    <span>더미 객체</span>
+  </body>
+</html>

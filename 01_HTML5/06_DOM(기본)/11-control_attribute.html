@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic</title>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 변수 선언
+        let image = document.getElementById('image');
+
+        // 속성 변경
+        image.src = '../실습파일/white_cat.jpeg';
+        image.width = 300;
+        image.height = 200;
+      };
+    </script>
+  </head>
+  <body>
+    <img id="image" />
+  </body>
+</html>

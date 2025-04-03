@@ -1,0 +1,31 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동적 아규먼트</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>동적 아규먼트</h1>
+      <p>- v-bind 디렉티브 또는 v-on 디렉티브 (이벤트 처리) 사용 가능</p>
+      <hr />
+      <img v-bind="image1" />
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            image1: {
+              src: "https://contactsvc.bmaster.kro.kr/photos/18.jpg",
+              title: "Lily's photo",
+            },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

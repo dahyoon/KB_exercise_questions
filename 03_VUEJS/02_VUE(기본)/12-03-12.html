@@ -1,0 +1,94 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복 렌더링 디렉티브</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>반복 렌더링 디렉티브</h1>
+      <p>
+        - 반복적인 데이터를 렌더링하기 위해 v-for 디렉티브 사용 <br />
+        - js의 for문과 유사
+      </p>
+      <h2>v-for</h2>
+      - v-for="contact in contacts" <br />
+      - v-for="(contact, index) in contacts"
+      <h3>배열 순회 []</h3>
+      <hr />
+      <h4>v-for="contact in contacts"</h4>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="contact in contacts" :key="contact.no">
+            <td>{{contact.no}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>v-for="(contact, index) in contacts"</h4>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>인덱스</th>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="(contact, index) in contacts" :key="contact.no">
+            <td>{{index}}</td>
+            <td>{{contact.no}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            pageno: 1,
+            pagesize: 4,
+            totalcount: 100,
+            contacts: [
+              { no: 1011, name: "RM", tel: "010-2345-3325" },
+              { no: 1012, name: "정국", tel: "010-2525-3325" },
+              { no: 1013, name: "슈가", tel: "010-2445-4425" },
+              { no: 1014, name: "제이홉", tel: "010-1123-2221" },
+            ],
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

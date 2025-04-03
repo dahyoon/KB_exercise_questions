@@ -1,0 +1,70 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복 렌더링 디렉티브</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>반복 렌더링 디렉티브</h1>
+      <p>
+        - 반복적인 데이터를 렌더링하기 위해 v-for 디렉티브 사용 <br />
+        - js의 for문과 유사
+      </p>
+      <h2>v-for</h2>
+      - v-for="(val, key) in regions" <br />
+      - v-for="(val, key, index) in regions" <br />
+      <h3>객체 순회 {}</h3>
+      <hr />
+      <h4>v-for="(val, key) in regions"</h4>
+      <select id="regions">
+        <option disabled="disabled" selected>지역을 선택하세요.</option>
+        <option v-for="(val, key) in regions" :value="key" :key="key">
+          {{val}}
+        </option>
+      </select>
+      <h4>v-for="(val, key, index) in regions"</h4>
+      <select id="regions">
+        <option disabled="disabled" selected>지역을 선택하세요.</option>
+        <option v-for="(val, key, index) in regions" :value="key" :key="key">
+          {{index}}:{{val}}
+        </option>
+      </select>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            regions: {
+              A: "Asia",
+              B: "America",
+              C: "Europe",
+              D: "Africa",
+              E: "Oceania",
+            },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

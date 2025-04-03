@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic</title>
+    <script>
+      // 함수 선언
+      function callTenTimes(callback) {
+        // 5회 반복
+        for (let i = 0; i < 5; i++) {
+          callback(); // 매개변수로 전달된 함수를 호출
+        }
+      }
+
+      // 변수 선언
+      let fun = function () {
+        alert('함수 호출');
+      };
+
+      callTenTimes(fun);
+    </script>
+  </head>
+  <body></body>
+</html>

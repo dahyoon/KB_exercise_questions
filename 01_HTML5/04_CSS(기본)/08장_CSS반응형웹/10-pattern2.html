@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>패턴2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #menu {
+        width: 260px;
+        float: right;
+      }
+      #section {
+        width: 700px;
+        float: left;
+      }
+      li {
+        list-style: none;
+      }
+      @media screen and (max-width: 767px) {
+        /* 스마트폰에서 전부 해제 */
+        body {
+          width: auto;
+        }
+        #menu {
+          width: auto;
+          float: none;
+        }
+        #section {
+          width: auto;
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+      </ul>
+    </div>
+    <div id="section">
+      <h1>10-pattern2</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident at
+        enim iste, ducimus, nostrum impedit nemo obcaecati quae tempora facere
+        dicta magni excepturi necessitatibus, delectus non incidunt quia quasi
+        animi?
+      </p>
+    </div>
+  </body>
+</html>

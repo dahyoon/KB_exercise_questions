@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 인스턴스</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>04 Vue 인스턴스</h1>
+      <h2>4.2 data 옵션</h2>
+      <ul>
+        <li>
+          data 옵션은 컴포넌트가 관리하고 추적해야 할 데이터를 등록할 때 사용함
+          <ul>
+            <li>
+              관리와 추적의 의미는 변경을 탐지하고 추적하여 화면을 갱신하겠다는
+              뜻으로 이해함
+            </li>
+          </ul>
+        </li>
+        <li>
+          data 옵션은 <b>반드시 객체를 return하는 함수로 부여되어야 함</b>
+          <ul>
+            <li>2.x 버전에서는 직접 객체 지정 가능</li>
+            <li>
+              3.x 버전부터는 함수 부여 필수 (안하면 에러)
+              <ul>
+                <li style="color: tomato">
+                  [Vue warn]: The data option must be a function. Plain object
+                  usage is no loger supported at &lt;App&gt;
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          컴포넌트 인스턴스에서는 data에 대한 Proxy를 직접 접근 가능
+          <ul>
+            <li>
+              vm.$data
+              <ul>
+                <li>name 데이터의 경우 vm.$data.name으로 접근 가능</li>
+                <li>
+                  또한 컴포넌트 인스턴스에서는 vm.$data.name에 대한 proxy를
+                  추가하여 vm.name과 같이 접근할 수 있도록 함
+                </li>
+                <li><b>vm.$data.name</b>과 <b>vm.name</b>은 같은 값</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          컴포넌트 인스턴스에는 <b>$로 시작하는 많은 객체들 존재</b>
+          <ul>
+            <li>
+              컴포넌트 인스턴스 객체 확인 방법:
+              <ul>
+                <li>
+                  개발자 도구 (F12) > Vue > &lt;App&gt; 컴포넌트 클릭 > Console
+                  창에 Vue 인스턴스 객체 클릭 > 다양한 속성 나타남
+                </li>
+                <li>
+                  개발자 도구 (F12) > Console 창에 vm 입력 후 엔터 > Proxy 세모
+                  아이콘 클릭 >
+                  <ul>
+                    <li>
+                      name : (...) <br />
+                      $ : (...) <br />
+                      $attrs : (...) <br />
+                      $data : (...) <br />
+                      $el : (...) <br />
+                      $emit : (...)<br />
+                      $forceUpdate : (...) <br />
+                      $host : (...) <br />
+                      $nextTick : (...)<br />
+                      $options : (...) <br />
+                      $parent : (...) <br />
+                      $props : (...) <br />
+                      $refs : (...) <br />
+                      $root : (...) <br />
+                      $slots : (...) <br />
+                      $watch : (...)
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          즉, <b>$로 시작하는 이름은 인스턴스 내부에서 특수한 용도로 사용됨!</b>
+        </li>
+        <li>
+          그러므로
+          <b
+            >data 객체의 속성명으로 $, _로 시작하는 이름 사용 불가 (에러
+            발생)</b
+          >
+          <ul>
+            <li>이 경우 Proxy를 생성하지 않기에 반응성을 가질 수 없음</li>
+            <li>
+              에러:
+              <span style="color: tomato">
+                [Vue warn]: Property "$name" must be accessed via $data because
+                it starts with a reserved character ("$" or "_") and is not
+                proxied on the render context. at &lt;App&gt;
+              </span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <hr />
+      <input type="text" id="a" v-model="$name" />
+      <br />
+      입력하신 이름: <span>{{$name}}</span>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { $name: "" };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

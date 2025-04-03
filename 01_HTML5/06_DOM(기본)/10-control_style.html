@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic</title>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 문서 객체 추출
+        let output = '';
+        for (let i = 0; i < 256; i++) {
+          output += '<div></div>';
+        }
+        document.body.innerHTML = output;
+
+        // 문서 객체 선택
+        let divs = document.querySelectorAll('div');
+        for (let i = 0; i < divs.length; i++) {
+          // 변수 선언
+          let div = divs[i];
+          console.log('divs', divs);
+          console.log('div', div);
+
+          // 스타일 적용
+          div.style.height = '2px';
+          div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>10-control_style</h1>
+  </body>
+</html>

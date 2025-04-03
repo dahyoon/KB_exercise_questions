@@ -1,0 +1,85 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복 렌더링 디렉티브</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>반복 렌더링 디렉티브</h1>
+      <p>
+        - 반복적인 데이터를 렌더링하기 위해 v-for 디렉티브 사용 <br />
+        - js의 for문과 유사
+      </p>
+      <h2>v-for + &lt; template &gt;</h2>
+      - 여러 요소를 묶어서 반복 렌더링을 하고 싶다면 &lt;template&gt; 요소와
+      v-for 디렉티브를 함께 사용 <br />
+      - &lt;template&gt; 태그는 렌더링 내용에는 포함되지 않음, 단지 요소들을
+      그룹으로 묶어주기 위한 용도로만 사용됨
+      <hr />
+      <h4>v-for="contact in contacts"</h4>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <template v-for="(contact, index) in contacts" :key="contact.no">
+            <tr>
+              <td>{{contact.no}}</td>
+              <td>{{contact.name}}</td>
+              <td>{{contact.tel}}</td>
+            </tr>
+            <tr class="divider" v-if="index % 4 === 3">
+              <!-- index 값을 4로 나눴을 떄 나머지가 3인 경우 true 반환 -> 4행마다 1번씩 구분선처럼 보이는 <tr>이 렌더링됨 -->
+              <td colspan="3"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            pageno: 1,
+            pagesize: 4,
+            totalcount: 100,
+            contacts: [
+              { no: 1011, name: "RM", tel: "010-2345-3325" },
+              { no: 1012, name: "정국", tel: "010-2525-3325" },
+              { no: 1013, name: "슈가", tel: "010-2445-4425" },
+              { no: 1014, name: "제이홉", tel: "010-1123-2221" },
+              { no: 1015, name: "뷔", tel: "010-0223-2221" },
+              { no: 1016, name: "지민", tel: "010-2932-3333" },
+              { no: 1017, name: "진", tel: "010-1114-2222" },
+            ],
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

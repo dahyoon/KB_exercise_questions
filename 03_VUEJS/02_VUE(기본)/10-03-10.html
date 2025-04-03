@@ -1,0 +1,42 @@
+<!-- v-if -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건 렌더링 디렉티브</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>조건 렌더링 디렉티브</h1>
+      <p>
+        - 웹 앱 개발 시 특정 조건에 따라 화면에 보여줄지 말지 결정해야 될 때
+        조건 디렉티브 사용 가능 <br />
+        - 조건 렌더링과 관련된 디렉티브: v-show, v-if, v-if-else, v-else 등
+      </p>
+      <h2>v-if</h2>
+      <p>
+        - 조건에 부합되지 않을 경우 <b>렌더링 수행하지 않음</b> <br />
+        - 즉, 개발자 도구 Elements에 들어가면, 조건 불출족 시
+        &lt;!--v-if--&gt;라고 출력되고, 조건 출족 시 렌더링 수행함
+      </p>
+      <hr />
+      예금액: <input type="text" v-model="amount" />
+      <img
+        v-if="amount < 0"
+        src="https://contactsvc.bmaster.kro.kr/img/error.png"
+        title="마이너스는 허용하지 않습니다."
+        style="width: 15px; height: 15px; vertical-align: middle"
+      />
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { amount: "" };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

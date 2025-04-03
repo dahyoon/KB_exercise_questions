@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 인스턴스</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>04 Vue 인스턴스</h1>
+      <h2>4.1 Vue 인스턴스 개요</h2>
+      <ul>
+        <li>
+          Vue.createApp 메서드를 호출하여 만들어진 객체를 애플리케이션
+          인스턴스라고 부름.
+        </li>
+        <li>
+          전체 컴포넌트 트리는 애플리케이션 인스턴스를 마운트할 때 렌더링하게
+          됨.
+        </li>
+        <li>
+          옵션 객체: Vue 인스턴스 생성 시 전달하는 속성들을 담은 객체 (예, name,
+          data, etc.)
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { name: "" };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

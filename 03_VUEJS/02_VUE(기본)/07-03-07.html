@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-model 수식어</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>v-model 디렉티브의 수식어</h1>
+      <p>
+        v-model 디렉티브 특징: <br />
+        - 양방향 데이터 바인딩 지원: 사용자가 UI에서 입력한 값이 내부 데이터에
+        반영되는 것<br />
+      </p>
+      <p>
+        v-model 디렉티브의 수식어 (Modifier): <br />
+        - 지원하는 수식어 몇가지: <br />
+        &emsp; - lazy: 입력폼에서 다른 요소로 포커스가 이동하는 이벤트 발생 시
+        입력한 값을 데이터와 동기화함<br />
+        &emsp;&emsp;&emsp;- 예시) &lt;input type="text" v-model.lazy="name"
+        /&gt;
+        <br />
+        &emsp; - number: 숫자가 입력될 경우 number 타입의 값으로 자동 형변환되어
+        데이터 옵션 값으로 반영됨 (숫자로 변환 가능한 값은 숫자로 변환, 아니면
+        문자열로 받아냄)<br />
+        &emsp;&emsp;&emsp;- 예시) &lt;input type="text" v-model.number="num"
+        /&gt;
+        <br />
+        &emsp; - trim: 문자열의 앞뒤 공백 자동 제거 &emsp; <br />
+        &emsp;&emsp;&emsp;- 예시) &lt;input type="text" v-model.trim="message"
+        /&gt;
+        <br />
+        - Note: <br />
+        &emsp;&emsp;&emsp;- 여러 수식어 동시에 부여 가능<br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- 예시) v-model.trim.lazy <br />
+        &emsp;&emsp;&emsp;- v-model.num<br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- (확인 방법: console에서 vm.num 입력)<br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- 100 입력 -> number 100 반영 <br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- 100aaa 입력 -> number 100 반영 (aaa
+        없어짐) <br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- aaa100 입력 -> string aaa100 반영 <br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- 이유: 앞에서부터 형변환이 가능한
+        부분만 숫자로 변환함 <br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;- abs 입력 -> string 'abc' 반영
+      </p>
+      <hr />
+      <input type="text" v-model.number="num" /><br />
+      입력된 수: <span>{{num}}</span>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { num: 0 };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

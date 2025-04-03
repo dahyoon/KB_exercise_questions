@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-dowhile</title>
+    <script>
+      let month;
+      do {
+        month = prompt('월을 입력하세요. (1-12 입력)', 3); // 취소 누를 경우 null 반환
+        if (month == null) {
+          break;
+        }
+      } while (month < 1 || month > 12);
+
+      if (month != null) {
+        switch (month) {
+          case '12':
+          case '1':
+          case '2':
+            document.writeln(month, '월: 겨울이네요!');
+            break;
+          case '3':
+          case '4':
+          case '5':
+            document.writeln(month, '월: 봄이네요!');
+            break;
+          case '6':
+          case '7':
+          case '8':
+            document.writeln(month, '월: 여름이네요!');
+            break;
+          case '9':
+          case '10':
+          case '11':
+            document.writeln(month, '월: 가을이네요!');
+            break;
+        }
+      } else {
+        document.writeln('취소를 눌렀군요.');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

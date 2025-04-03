@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic</title>
+    <script>
+      // Date 객체 선언
+      let date = new Date();
+
+      // 요소 추출
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1; // 월은 0부터 시작하므로 1을 더해야 실제 월
+      let day = date.getDate();
+      let weekday = date.getDay();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      let seconds = date.getSeconds();
+    </script>
+  </head>
+  <body>
+    <script>
+      // 템플릿 리터럴을 사용해 변수 값 출력: 다음과 같이 하면 맨 마지막 값만 출력됨
+      //   document.body.innerHTML = `현재 날짜: ${date}`;
+      //   document.body.innerHTML = `현재 년도: ${year}`;
+      //   document.body.innerHTML = `현재 월: ${month}`;
+      //   document.body.innerHTML = `현재 일: ${day}`;
+      //   document.body.innerHTML = `현재 요일: ${weekday}`;
+      //   document.body.innerHTML = `현재 시간: ${hours}`;
+      //   document.body.innerHTML = `현재 분: ${minutes}`;
+      //   document.body.innerHTML = `현재 초: ${seconds}`;
+      // 여러 값들을 하나의 innerHTML에 출력
+      document.body.innerHTML = `
+        현재 날짜: ${date} <br>
+        현재 년도: ${year} <br>
+        현재 월: ${month} <br>
+        현재 일: ${day} <br>
+        현재 요일: ${weekday} <br>
+        현재 시간: ${hours} <br>
+        현재 분: ${minutes} <br>
+        현재 초: ${seconds}
+      `;
+    </script>
+  </body>
+</html>

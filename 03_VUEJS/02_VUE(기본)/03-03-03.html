@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기본 디렉티브</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>기본 디렉티브</h1>
+      <p>기본 디렉티브 3가지: v-text, v-html, v-bind</p>
+      <p>
+        기본 디렉티브 특징: <br />
+        - 단방향 데이터 바인딩 지원: 데이터로부터 화면 UI로만 단방향으로 바인딩
+        하는 바인딩. 즉, Vue 인스턴스의 데이터나 속성이 바뀌면 UI 갱신, 반대로
+        화면의 바인딩된 요소에서 값을 변경하더라도 데이터가 바뀌지 않음.
+      </p>
+      <input id="a" type="text" v-bind:value="message" />
+      <br />
+      <img v-bind:src="imagePath" />
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            message: "v-bind 디렉티브",
+            imagePath: "https://contactsvc.bmaster.kro.kr/photos/18.jpg",
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

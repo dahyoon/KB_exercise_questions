@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Bootstrap 5</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boostrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <h2>Basic Table</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Striped Rows</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Bordered Table</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Borderless Table</h2>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Table Hover</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>상황별 Table</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Default</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-primary">
+          <td>.table-primary</td>
+          <td>Primary</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-success">
+          <td>.table-success</td>
+          <td>Success</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-danger">
+          <td>.table-danger</td>
+          <td>Danger</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-info">
+          <td>.table-info</td>
+          <td>Info</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-warning">
+          <td>.table-warning</td>
+          <td>Warning</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-active">
+          <td>.table-active</td>
+          <td>Active</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-secondary">
+          <td>.table-secondary</td>
+          <td>Secondary</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-light">
+          <td>.table-light</td>
+          <td>Light</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+        <tr class="table-dark">
+          <td>.table-dark</td>
+          <td>Dark</td>
+          <td>Pearl Ahn</td>
+          <td>pearl.ahn@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Small Table</h2>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary.moe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Responsive Table (반응형 테이블)</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Screen width</th>
+            <th>.table-responsive 클래그</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.table-responsive-sm</td>
+            <td>&lt; 576px</td>
+            <td>
+              부모 태그에 배정, 테이블이 부모보다 큰 경우 스크롤 바 생성됨
+            </td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@gmail.com</td>
+            <td>Korea</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>.table-responsive-md</td>
+            <td>&lt; 768px</td>
+          </tr>
+          <tr>
+            <td>.table-responsive-lg</td>
+            <td>&lt; 992px</td>
+          </tr>
+          <tr>
+            <td>.table-responsive-xl</td>
+            <td>&lt; 1200px</td>
+          </tr>
+          <tr>
+            <td>.table-responsive-xxl</td>
+            <td>&lt; 1400px</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

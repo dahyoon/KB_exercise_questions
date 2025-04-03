@@ -1,0 +1,90 @@
+<!-- v-for -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v-cloack 디렉티브</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" v-cloack>
+      <h1>v-cloack 디렉티브</h1>
+      <p>- 화면 초기에 컴파일 되지 않은 템플릿은 나타나지 않도록 함</p>
+      <hr />
+      <h4>v-for="contact in contacts"</h4>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="contact in contacts" :key="contact.no">
+            <td>{{contact.no}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>v-for="(contact, index) in contacts"</h4>
+      <table id="list">
+        <thead>
+          <tr>
+            <th>인덱스</th>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="(contact, index) in contacts" :key="contact.no">
+            <td>{{index}}</td>
+            <td>{{contact.no}}</td>
+            <td>{{contact.name}}</td>
+            <td>{{contact.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            pageno: 1,
+            pagesize: 4,
+            totalcount: 100,
+            contacts: [
+              { no: 1011, name: "RM", tel: "010-2345-3325" },
+              { no: 1012, name: "정국", tel: "010-2525-3325" },
+              { no: 1013, name: "슈가", tel: "010-2445-4425" },
+              { no: 1014, name: "제이홉", tel: "010-1123-2221" },
+            ],
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
