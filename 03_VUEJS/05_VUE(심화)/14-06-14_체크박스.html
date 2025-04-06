@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* 초기화 */
+      body {
+        margin: 1rem;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20pt;
+      }
+      .todo-done {
+        text-decoration: line-through;
+      }
+      .container {
+        padding: 10px 10px 10px 10px;
+      }
+      .panel-borderless {
+        border: 0;
+        box-shadow: none;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+      table {
+        border-collapse: collapse;
+        border: 0.5px solid lightcoral;
+        margin: 2rem;
+      }
+      thead {
+        background-color: pink;
+      }
+      tbody tr:nth-of-type(2n-1) {
+        background-color: rgba(255, 214, 220, 0.604);
+      }
+      th,
+      td {
+        border-right: 0.5px solid lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>06 스타일 적용</h1>
+    <h2>6.5 TodoList 예제</h2>
+    <h3>3) 템플릿 작성</h3>
+    <ul>
+      <li>
+        데이터와 메서드까지 작성했으므로 이제 화면 시안을 반영해 템플릿
+        작성하기!
+      </li>
+      <li>
+        주의: 동적으로 바인딩할 부분, 반복 렌더링할 부분, 조건에 따라 다르게
+        렌더링하는 부분
+      </li>
+    </ul>
+    <div id="app" class="container">
+      <div class="card card-body bg-light">
+        <div class="title text-start fw-light">:: Todolist App</div>
+      </div>
+      <div class="card card-default card-borderless">
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="msg"
+                  class="form-control"
+                  name="msg"
+                  placeholder="할일을 여기에 입력!"
+                  v-model.trim="todo"
+                  @keyup.enter="addTodo"
+                />
+                <span class="btn btn-primary input-group-addon" @click="addTodo"
+                  >추가</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group">
+                <!-- v-for 수정: sortedTodos 사용 -->
+                <li
+                  class="list-group-item"
+                  v-for="todo in sortedTodos"
+                  :key="todo.id"
+                  :class="{ 'list-group-item-success': todo.completed }"
+                >
+                  <input
+                    type="checkbox"
+                    class="pointer"
+                    @click="toggleCompleted(todo.id)"
+                  />
+                  <span class="ms-2" :class="{ 'todo-done': todo.completed }">
+                    {{ todo.todo }} {{ todo.completed ? '(완료!)' : '' }}
+                  </span>
+                  <span
+                    class="float-end badge bg-danger pointer"
+                    @click.stop="deleteTodo(todo.id)"
+                  >
+                    삭제
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      let ts = new Date().getTime();
+      const vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            todo: "",
+            todolist: [
+              {
+                id: ts,
+                todo: "자전거 타기",
+                completed: false,
+              },
+              { id: ts + 1, todo: "가족과 공원 산책", completed: false },
+              { id: ts + 2, todo: "일요일 애견 카페", completed: false },
+              { id: ts + 3, todo: "공부하기", completed: false },
+            ],
+          };
+        },
+        computed: {
+          sortedTodos() {
+            // 미완료 항목은 위, 완료 항목은 아래 정렬
+            // 미완료 항목을 먼저 배치, 그 안에서 문자열 순으로 정렬
+            const incompleteTodos = this.todolist
+              .filter((todo) => !todo.completed)
+              .sort((a, b) => {
+                if (a.todo === b.todo) {
+                  return 0;
+                }
+                return a.todo < b.todo ? -1 : 1;
+              });
+
+            const completedTodos = this.todolist
+              .filter((todo) => todo.completed)
+              .sort((a, b) => {
+                if (a.todo === b.todo) {
+                  return 0;
+                }
+                return a.todo < b.todo ? -1 : 1;
+              });
+
+            return [...incompleteTodos, ...completedTodos];
+          },
+        },
+        methods: {
+          addTodo() {
+            if (this.todo.length >= 2) {
+              this.todolist.push({
+                id: new Date().getTime(),
+                todo: this.todo,
+                completed: false,
+              });
+              this.todo = "";
+            }
+          },
+          deleteTodo(id) {
+            let index = this.todolist.findIndex((item) => id === item.id);
+            this.todolist.splice(index, 1);
+          },
+          toggleCompleted(id) {
+            let index = this.todolist.findIndex((item) => id === item.id);
+            this.todolist[index].completed = !this.todolist[index].completed;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* 초기화 */
+      body {
+        margin: 1rem;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20pt;
+      }
+      .todo-done {
+        text-decoration: line-through;
+      }
+      .container {
+        padding: 10px 10px 10px 10px;
+      }
+      .panel-borderless {
+        border: 0;
+        box-shadow: none;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+      table {
+        border-collapse: collapse;
+        border: 0.5px solid lightcoral;
+        margin: 2rem;
+      }
+      thead {
+        background-color: pink;
+      }
+      tbody tr:nth-of-type(2n-1) {
+        background-color: rgba(255, 214, 220, 0.604);
+      }
+      th,
+      td {
+        border-right: 0.5px solid lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>06 스타일 적용</h1>
+    <h2>6.5 TodoList 예제</h2>
+    <h3>2) 데이터와 메서드 정의</h3>
+    <ul>
+      <li>
+        화면 단위 개발에서 가장 먼저 정의할 것은
+        <span style="background-color: pink">data의 구조!</span>
+      </li>
+      <li>
+        data가 정의되면 data를 변경하는 메서드나 계산된 속성, 경우에 따라서는
+        관찰 속성을 정의하는 것!
+      </li>
+      <li>다음은 09-06-09.html 화면 시안을 보면서 data 도출해낸 것:</li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>[데이터]</th>
+          <th style="text-align: center">설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>todo</td>
+          <td>텍스트 박스에 사용자가 입력하는 내용을 받아내기 위한 data</td>
+        </tr>
+        <tr>
+          <td>todolist</td>
+          <td>
+            추가한 todo들의 목록. todo 한 건은 다음과 같음:
+            <ul>
+              <li>id: todo 한 건의 고유 키. 이 예제에서는 timestamp</li>
+              <li>todo: todo 내용</li>
+              <li>completed: 완료 여부(true, false)</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>[메서드]</th>
+          <th style="text-align: center">설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>addTodo</td>
+          <td>
+            텍스트 박스에 할 일(todo)을 입력하고 엔터를 누르거나 추가 버튼을
+            클릭하면 todolist에 새로운 todo를 추가합니다.
+          </td>
+        </tr>
+        <tr>
+          <td>deleteTodo</td>
+          <td>
+            삭제 버튼을 클릭하면 id를 이용해 할 일(todo)을 찾아서 삭제합니다.
+          </td>
+        </tr>
+        <tr>
+          <td>toggleCompleted</td>
+          <td>
+            할 일(todo) 한 건을 클릭하면 id를 이용해 completed 값을 토글합니다.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>위에서 정의한 데이터 및 메서드를 Vue 인스턴스의 코드로 작성하기!</li>
+    </ul>
+    <div id="app" class="container">
+      <div class="card card-body bg-light">
+        <div class="title text-start fw-light">:: Todolist App</div>
+      </div>
+      <div class="card card-default card-borderless">
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="msg"
+                  class="form-control"
+                  name="msg"
+                  placeholder="할일을 여기에 입력!"
+                  v-model="todo"
+                />
+                <span class="btn btn-primary input-group-addon" @click="addTodo"
+                  >추가</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group">
+                <li
+                  class="list-group-item"
+                  v-for="item in todolist"
+                  :key="item.id"
+                  :class="{ 'list-group-item-success': item.completed }"
+                >
+                  <span
+                    class="pointer"
+                    @click="toggleCompleted(item.id)"
+                    :class="{ 'todo-done': item.completed }"
+                  >
+                    {{ item.todo }}
+                  </span>
+                  <span
+                    class="float-end badge bg-danger pointer"
+                    @click="deleteTodo(item.id)"
+                  >
+                    삭제
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      let ts = new Date().getTime();
+      const vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            todo: "",
+            todolist: [
+              {
+                id: ts,
+                todo: "자전거 타기",
+                completed: false,
+              },
+              { id: ts + 1, todo: "가족과 공원 산책", completed: true },
+              { id: ts + 2, todo: "일요일 애견 카페", completed: false },
+              { id: ts + 3, todo: "공부하기", completed: false },
+            ],
+          };
+        },
+        methods: {
+          addTodo() {
+            if (this.todo.length >= 2) {
+              this.todolist.push({
+                id: new Date().getTime(),
+                todo: this.todo,
+                completed: false,
+              });
+              this.todo = "";
+            }
+          },
+          deleteTodo(id) {
+            let index = this.todolist.findIndex((item) => id === item.id);
+            this.todolist.splice(index, 1);
+          },
+          toggleCompleted(id) {
+            let index = this.todolist.findIndex((item) => id === item.id);
+            this.todolist[index].completed = !this.todolist[index].completed;
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
