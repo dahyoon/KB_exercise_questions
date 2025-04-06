@@ -7,17 +7,17 @@
 </template>
 
 <script>
-import InputName from './components/InputName.vue';
+import InputName from './components/InputName.vue'
 export default {
   name: 'App4',
   components: { InputName },
   data() {
-    return { parentName: '' };
+    return { parentName: '' }
   },
   methods: {
     nameChangedHandler(e) {
-      this.parentName = e.name;
+      this.parentName = e.name
     },
   },
-};
+}
 </script>
