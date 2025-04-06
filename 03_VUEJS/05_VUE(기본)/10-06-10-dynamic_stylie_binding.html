@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+    <style>
+      .score {
+        border: 1px solid black;
+      }
+      .warning {
+        background-color: skyblue;
+        color: purple;
+      }
+      .warnimage {
+        width: 18px;
+        height: 18px;
+        top: 5px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>06 스타일 적용</h1>
+    <h2>6.4 동적 스타일 바인딩</h2>
+    <ul>
+      <li>
+        계산된 속성 (computed property)과 메서드(methods)가 반환한 값을 스타일에
+        적용 가능
+      </li>
+      <li>
+        예제: 입력 값이 올바른 범위에 포함되지 않을 때
+        <span style="background-color: pink">계산된 속성</span>을 이용해
+        스타일을 적용
+      </li>
+    </ul>
+    <div id="app">
+      <div>
+        <p>1부터 100까지만 입력 가능합니다.</p>
+        <div>
+          점수:
+          <input
+            type="text"
+            class="score"
+            :class="info"
+            v-model.number="score"
+          />
+          <img
+            src="https://contactsvc.bmaster.kro.kr/img/error.png"
+            alt="error image"
+            class="warnimage"
+            v-if="info.warning"
+            title="1부터 100까지만 입력하세요."
+          />
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      const vm = Vue.createApp({
+        name: "App",
+        data() {
+          return { score: 50 };
+        },
+        computed: {
+          info() {
+            return { warning: this.score < 1 || this.score > 100 };
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

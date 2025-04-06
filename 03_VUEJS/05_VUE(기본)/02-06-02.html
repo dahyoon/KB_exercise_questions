@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+  </head>
+  <body>
+    <h1>06 스타일 적용</h1>
+    <h2>6.2 인라인 스타일</h2>
+    <ul>
+      <li>
+        기존 HTML에서는 인라인 스타일(HTML 요소의 style 프로퍼티에 CSS를
+        기술하는 방식)의 사용을 권장하지 않음, Vue.js에서도 마찬가지
+      </li>
+      <li>그러나 필요한 경우도 존재하여 사용 방법 숙지 필수</li>
+      <li>
+        인라인 스타일 작성 방법: v-bind:style
+        <ul>
+          <li>style로 지정할 정보는 데이터 속성에 자바스크립트 객체로 작성</li>
+          <li>
+            데이터 속성 작성 시 주의 사항:
+            <ul>
+              <li>
+                스타일 속성을 케밥 표기법(kebab casing)이 아닌 카멜 표기법(camel
+                casing) 사용 필수
+              </li>
+              <li>
+                또한 스타일 속성과 속성은 세미콜론(;)이 아닌 콤마(,) 기호를
+                이용해 구분함
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div id="app">
+      <button
+        id="a"
+        :style="style1"
+        @mouseover.stop="overEvent"
+        @mouseout.stop="outEvent"
+      >
+        테스트
+      </button>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      const vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            style1: { backgroundColor: "aqua", color: "black" },
+          };
+        },
+        methods: {
+          overEvent() {
+            this.style1.backgroundColor = "purple";
+            this.style1.color = "yellow";
+          },
+          outEvent() {
+            this.style1.backgroundColor = "aqua";
+            this.style1.color = "black";
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

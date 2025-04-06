@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+  </head>
+  <body>
+    <h1>6.2 인라인 스타일</h1>
+    <ul>
+      <li>
+        기존 HTML에서는 인라인 스타일(HTML 요소의 style 프로퍼티에 CSS를
+        기술하는 방식)의 사용을 권장하지 않음, Vue.js에서도 마찬가지
+      </li>
+      <li>그러나 필요한 경우도 존재하여 사용 방법 숙지 필수</li>
+      <li>
+        인라인 스타일 작성 방법: v-bind:style
+        <ul>
+          <li>style로 지정할 정보는 데이터 속성에 자바스크립트 객체로 작성</li>
+          <li>
+            데이터 속성 작성 시 주의 사항:
+            <ul>
+              <li>
+                스타일 속성을 케밥 표기법(kebab casing)이 아닌 카멜 표기법(camel
+                casing) 사용 필수
+              </li>
+              <li>
+                또한 스타일 속성과 속성은 세미콜론(;)이 아닌 콤마(,) 기호를
+                이용해 구분함
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <hr
+        style="border: none; /* 기본 테두리 제거 */ border-top: 2px dotted #000"
+      />
+      <h3>(continued 1)</h3>
+      <li>
+        v-bind:style에 바인딩할 때 직접 객체 리터럴 표기법으로 속성을 하나씩
+        지정할 수 있음 (06-02-06.html에서는
+        <b
+          >미이 style1으로 데이터를 초기화할 때 객체를 만들어 둔 후 style1
+          객체를 바인딩 함</b
+        >)
+        <ul>
+          <li>
+            <b
+              >예제 02-06-02.html와 같이 요소에 지정할 스타일을 객체 단위로
+              바인딩하는 것이 더 편리한 방법!</b
+            >
+          </li>
+        </ul>
+      </li>
+      <hr
+        style="border: none; /* 기본 테두리 제거 */ border-top: 2px dotted #000"
+      />
+      <h3>(continued 2)</h3>
+      <li>또한, 인라인 스타일 적용 시 여러 객체를 한 번에 지정 가능!</li>
+    </ul>
+    <div id="app">
+      <button id="btn1" :style="[myColor, myLayout]">버튼1</button>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      const vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            myColor: { backgroundColor: "purple", color: "yellow" },
+            myLayout: { width: "150px", height: "80px", textAlign: "center" },
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

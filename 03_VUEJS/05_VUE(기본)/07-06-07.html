@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타일 적용</title>
+    <style>
+      .buttonColor {
+        background-color: aqua;
+        color: black;
+      }
+      .buttonLayout {
+        text-align: center;
+        width: 120px;
+      }
+      .staticBorder {
+        border: khaki dashed 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>06 스타일 적용</h1>
+    <h2>6.3 CSS 클래스 바인딩</h2>
+    <ul>
+      <li>
+        CSS 클래스를 지정하기 위해 v-bind:class="..." 또는 :class="..." 사용
+      </li>
+      <li>
+        2가지 방법:
+        <ol>
+          <li>CSS 클래스명 문자열을 바인딩하는 방법</li>
+          <li>true/false 값을 가진 객체를 바인딩하는 방법</li>
+        </ol>
+      </li>
+    </ul>
+    <h3>1) CSS 클래스명 문자열을 바인딩하는 방법</h3>
+    <ul>
+      <li>
+        데이터나 속성에 CSS 클래스명 문자열을 할당하여 이 값을 :class로
+        바인딩하는 방법
+      </li>
+      <hr
+        style="border: none; /* 기본 테두리 제거 */ border-top: 2px dotted #000"
+      />
+      <h3>(continued 1)</h3>
+      <li>여러 개의 데이터 값을 클래스로 바인딩 하는 방법</li>
+      <hr
+        style="border: none; /* 기본 테두리 제거 */ border-top: 2px dotted #000"
+      />
+      <h3>(continued 2)</h3>
+      <li>3항 연산식과 조합하면 동적으로 클래스의 바인딩 여부 결정 가능!</li>
+    </ul>
+    <div id="app">
+      <input type="checkbox" v-model="isMyLayout">레이아웃 적용 여부</br>
+      <button class="staticBorder" :class="[myColor, isMyLayout ? myLayout: '']">
+        테스트 버튼
+      </button>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
+    <script type="text/javascript">
+      const vm = Vue.createApp({
+        name: "App",
+        data() { 
+          return {
+            myColor: "buttonColor",
+            myLayout: "buttonLayout",
+            isMyLayout: false
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
