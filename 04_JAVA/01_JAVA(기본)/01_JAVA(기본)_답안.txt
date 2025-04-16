@@ -1,0 +1,7 @@
+01 개발환경 구축, 변수, 타입, 연산자(기본).pdf
+p.6
+
+Q. 다음 코드의 문제점을 찾아 설명해보세요.
+A. 변수 value가 선언만 되어있고 초기화되어있지 않아 연산식에서 사용될 경우 커파일 에러 발생
+note:
+- 에러 내용: java: variable value might not have been initialized

@@ -1,0 +1,9 @@
+02 조건문과 반복문, 참조타입(기본).pdf
+p.21
+
+Q. 다음 코드를 작성하고 잘못된 부분을 찾아 그 이유를 설명하세요. (package ch05.sec04의 NullPointerExceptionExample 클래스)
+A.
+- 예외 발생 부분: intArray[0] = 10과 System.out.println("총 문자 수: " + str.length());
+- 이유: 값이 null로 초기화 된 intArray와 str를 사용하려고 할 때,
+        intArray가 참조하는 배열 객체가 없으므로 10을 저장할 수 없고,
+        str 변수가 참조하는 String 객체가 없으므로 문자열의 길이를 구할 수 없기 때문에 NullPointerException 예외 발생
