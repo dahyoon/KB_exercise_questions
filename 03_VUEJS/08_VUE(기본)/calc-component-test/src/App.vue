@@ -5,7 +5,8 @@
 // import Calc4 from './components/Calc4.vue'
 // import Calc5 from './components/Calc5.vue'
 // import Calc6 from './components/Calc6.vue'
-import Calc7 from './components/Calc7.vue'
+// import Calc7 from './components/Calc7.vue'
+import Calc8 from './components/Calc8.vue'
 
 export default {
   name: 'App',
@@ -15,7 +16,8 @@ export default {
   // components: { Calc4 },
   // components: { Calc5 },
   // components: { Calc6 },
-  components: { Calc7 },
+  // components: { Calc7 },
+  components: { Calc8 },
 }
 </script>
 
@@ -26,7 +28,8 @@ export default {
   <!-- <div><Calc4 /></div> -->
   <!-- <div><Calc5 /></div> -->
   <!-- <div><Calc6 /></div> -->
-  <div><Calc7 /></div>
+  <!-- <div><Calc7 /></div> -->
+  <div><Calc8 /></div>
 </template>
 
 <style scoped></style>

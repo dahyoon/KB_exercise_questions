@@ -17,7 +17,7 @@ export default {
 
     watchEffect(() => {
       result.value = x.value + y.value
-      console.log(`${x.value} + ${y.valuee} = ${result.value}`)
+      console.log(`${x.value} + ${y.value} = ${result.value}`)
     })
     return { x, y, result }
   },
