@@ -1,0 +1,27 @@
+ch08: Interface 인터페이스
+- sec01: 인터페이스의 역할
+- sec02: 인터페이스 선언
+- sec03: 상수 필드 (public static final) 타입 상수명 = 값;
+- sec04: 추상 메소드 (abstract method)
+    - 리턴타입 메소드명 (매개변수, ...)
+    - 구현 객체 필요
+- sec05:  default 메소드
+    - default 리턴타입 메소드명 (매개변수, ...) {...}
+    - 구현 객체 필요
+    - 재정의 시 public 접근 제한자 붙이기, default 키워드 생략 필수
+- sec06: static 메소드
+    - static 리턴타입 메소드명 (매개변수, ...) {...}
+    - 구현 객체 불필요
+    - 인터페이스만으로 호출 가능
+- sec07: private 메소드
+    - private 메소드 vs. private static 메소드
+        - private 메소드: default 메소드 안에서만 호출 가능
+        - private static 메소드: default 메소드, static 메소드 둘 다 안에서 호출 가능
+    - 용도: default와 static 메소드들의 중복 코드를 줄이기 위함
+- sec08: 다중 인터페이스 구현
+    - public clas 구현클래스명 implements 인터페이스A, 인터페이스B { 추상 메소드 정의 }
+- sec09: 인터페이스 상속
+    - public interface 자식인터페이스 extends 부모인터페이스1, 부모인터페이스2, ... {...}
+- sec10: 타입 변환
+    - 자동 타입 변환 (promotion, upcasting)
+    - 강제 타입 변환 (casting, downcasting)
