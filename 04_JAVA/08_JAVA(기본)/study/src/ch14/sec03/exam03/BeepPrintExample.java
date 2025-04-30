@@ -7,7 +7,7 @@ public class BeepPrintExample {
         Thread thread = new Thread() {
             @Override
             public void run() {
-                // 작업1 :0.5초 간격으로 비프음 출력
+                // 작업1: 0.5초 간격으로 비프음 출력
                 Toolkit toolkit = Toolkit.getDefaultToolkit();
                 for (int i = 0; i < 5; i++)  {
                     toolkit.beep();
