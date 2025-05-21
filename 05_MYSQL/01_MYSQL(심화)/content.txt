@@ -1,0 +1,7 @@
+ch2: MySQL 설치
+- sec01: MySQL 설치 전 준비사항
+- sec02: MySQL 설치
+- sec03: 샘플 데이터베이스 설치
+- sec04: 설치 후에 확인할 사항
+- sec05: MySQL제거
+- sec06: Linux에 MySQL 설치하기
