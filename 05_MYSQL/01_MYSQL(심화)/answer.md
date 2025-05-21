@@ -47,6 +47,10 @@
 
 ---
 
+---
+
+<br>
+
 ### employees DB의 각 테이블의 구조
 
 #### 1. departments 테이블
