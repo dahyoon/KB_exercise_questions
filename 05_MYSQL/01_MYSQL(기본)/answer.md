@@ -1,6 +1,6 @@
 ## 샘플 데이터베이스 설치
 
-### 1️. 기본 제공 DB (sakila, world)
+### 1. 기본 제공 DB (sakila, world)
 
 - `sakila` 및 `world` 데이터베이스는 **MySQL 설치 시 같이 다운로드 받음**
 
