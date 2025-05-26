@@ -93,7 +93,7 @@
 
 ---
 
-### 단원 05 - NoSQL 기반 MongoDB [🌱시작전🌱]
+### 단원 05 - NoSQL 기반 MongoDB [🔥진행중🔥]
 
 - 디렉토리: `06_MONGO/`
 
