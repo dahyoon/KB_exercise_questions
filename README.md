@@ -110,30 +110,30 @@
 
 | 항목                     | 기본 디렉토리           | 제출 | 심화 디렉토리           | 제출 |
 | ------------------------ | ----------------------- | :--: | ----------------------- | :--: |
-| 01 서블릿 기초           | `01_JSP(기본)`          |  ☐   | `01_JSP(심화)`          |  ☐   |
-| 02 JSP의 이해            | `02_JSP(기본)`          |  ☐   | `02_JSP(심화)`          |  ☐   |
-| 03 서블릿 심화           | `03_JSP(기본)`          |  ☐   | `03_JSP(심화)`          |  ☐   |
-| 04 요청 포워딩, EL, JSTL | `04_JSP(basic)`         |  ✅  | `04_JSP(심화)`          |  ☐   |
+| 01 서블릿 기초           | `01_JSP(basic)`         |  ☐   | `01_JSP(advance)`       |  ☐   |
+| 02 JSP의 이해            | `02_JSP(basic)`         |  ☐   | `02_JSP(advance)`       |  ☐   |
+| 03 서블릿 심화           | `03_JSP(basic)`         |  ☐   | `03_JSP(advance)`       |  ☐   |
+| 04 요청 포워딩, EL, JSTL | `04_JSP(basic)`         |  ✅  | `04_JSP(advance)`       |  ☐   |
 | 05 FrontController       | `05_JSP(basic_advance)` |  ☐   | `05_JSP(basic_advance)` |  ☐   |
 
 ---
 
 ### 단원 07 - Spring Framework를 활용한 애플리케이션 개발 []
 
-- 디렉토리: `08_/`
+- 디렉토리: `08_SPRING/`
 
-| 항목                               | 기본 디렉토리     | 제출 | 심화 디렉토리     | 제출 |
-| ---------------------------------- | ----------------- | :--: | ----------------- | :--: |
-| 01 Spring 이해                     | `01_SPRING(기본)` |  ✅  | `01_SPRING(심화)` |  ☐   |
-| 02 Spring MVC                      | `02_SPRING(기본)` |  ☐   | `02_SPRING(심화)` |  ☐   |
-| 03 Spring-MyBatis 연동             | `03_SPRING(기본)` |  ☐   | `03_SPRING(심화)` |  ☐   |
-| 04 Spring 기본 게시판              | `04_SPRING(기본)` |  ☐   | `04_SPRING(심화)` |  ☐   |
-| 05 Spring 기본 게시판, 파일 업로드 | `05_SPRING(기본)` |  ☐   | `05_SPRING(심화)` |  ☐   |
-| 06 Rest                            | `06_SPRING(기본)` |  ☐   | `06_SPRING(심화)` |  ☐   |
-| 07 OpenAPI                         | `07_SPRING(기본)` |  ☐   | `07_SPRING(심화)` |  ☐   |
-| 08 Spring AOP                      | `08_SPRING(기본)` |  ☐   | `08_SPRING(심화)` |  ☐   |
-| 09 Spring Security Form 인증       | `09_SPRING(기본)` |  ☐   | `09_SPRING(심화)` |  ☐   |
-| 10 Spring Security JWT 인증        | `10_SPRING(기본)` |  ☐   | `10_SPRING(심화)` |  ☐   |
-| 11 Spring Security JWT 인증2       | `11_SPRING(기본)` |  ☐   | `11_SPRING(심화)` |  ☐   |
+| 항목                               | 기본 디렉토리      | 제출 | 심화 디렉토리        | 제출 |
+| ---------------------------------- | ------------------ | :--: | -------------------- | :--: |
+| 01 Spring 이해                     | `01_SPRING(basic)` |  ✅  | `01_SPRING(advance)` |  ☐   |
+| 02 Spring MVC                      | `02_SPRING(basic)` |  ☐   | `02_SPRING(advance)` |  ☐   |
+| 03 Spring-MyBatis 연동             | `03_SPRING(basic)` |  ☐   | `03_SPRING(advance)` |  ☐   |
+| 04 Spring 기본 게시판              | `04_SPRING(basic)` |  ☐   | `04_SPRING(advance)` |  ☐   |
+| 05 Spring 기본 게시판, 파일 업로드 | `05_SPRING(basic)` |  ☐   | `05_SPRING(advance)` |  ☐   |
+| 06 Rest                            | `06_SPRING(basic)` |  ☐   | `06_SPRING(advance)` |  ☐   |
+| 07 OpenAPI                         | `07_SPRING(basic)` |  ☐   | `07_SPRING(advance)` |  ☐   |
+| 08 Spring AOP                      | `08_SPRING(basic)` |  ☐   | `08_SPRING(advance)` |  ☐   |
+| 09 Spring Security Form 인증       | `09_SPRING(basic)` |  ☐   | `09_SPRING(advance)` |  ☐   |
+| 10 Spring Security JWT 인증        | `10_SPRING(basic)` |  ☐   | `10_SPRING(advance)` |  ☐   |
+| 11 Spring Security JWT 인증2       | `11_SPRING(basic)` |  ☐   | `11_SPRING(advance)` |  ☐   |
 
 ---
