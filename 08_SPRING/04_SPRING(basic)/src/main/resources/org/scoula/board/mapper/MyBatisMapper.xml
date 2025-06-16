@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+Template Variables:
+- ${PACKAGE_NAME}
+- ${NAME}
+- ${TABLE_NAME}
+- ${VO_NAME}
+- ${COLUMNS}
+- ${VALUES}
+- ${SET_COLUMNS}
+-->
+
+<mapper namespace="${PACKAGE_NAME}.${NAME}">
+
+    <insert id="create">
+        insert into ${TABLE_NAME} (
+        ${COLUMNS}
+        ) values (
+        ${VALUES}
+        )
+        <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <update id="update">
+        update ${TABLE_NAME}
+        set
+            ${SET_COLUMNS},
+            update_date = now()
+        where no = #{no}
+    </update>
+
+    <delete id="delete">
+        delete from ${TABLE_NAME} where no = #{no}
+    </delete>
+
+    <select id="getList" resultType="${VO_NAME}">
+        <![CDATA[
+        select * from ${TABLE_NAME}
+        ]]>
+    </select>
+
+    <select id="get" resultType="${VO_NAME}">
+        select * from ${TABLE_NAME} where no = #{no}
+    </select>
+
+</mapper>
