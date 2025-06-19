@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c1e500c-535b-48f8-b93b-45c07ff8bb96" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringLegacy" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="339bn3gdyoe1" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="902">
+              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;build.gradle (SpringLegacy)&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,80,10,20,105,99,111,110,115,47,103,114,97,100,108,101,70,105,108,101,46,115,118,103,18,22,105,99,111,110,115,47,101,120,112,117,105,47,103,114,97,100,108,101,46,115,118,103,26,19,99,111,109,46,105,110,116,101,108,108,105,106,46,103,114,97,100,108,101,40,-103,-118,-46,-60,-2,-1,-1,-1,-1,1,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="374">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;log4j2.xml&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,66,10,17,102,105,108,101,84,121,112,101,115,47,120,109,108,46,115,118,103,18,23,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,120,109,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-33,-3,-24,-123,1,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/config/RootConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="132">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;RootConfig.java&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;ServletConfig.java&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="jar://$PROJECT_DIR$/../../../../Program Files/Java/jdk-17/lib/src.zip!/java.base/java/lang/Object.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="5808">
+              <caret line="291" column="29" selection-start-line="291" selection-start-column="29" selection-end-line="291" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;Object.java&quot;,&quot;foregroundColor&quot;:-2104859,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="154">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="24" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;WebConfig.java&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/controller/HomeController.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;HomeController.java&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/ex01/HelloServlet.java">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;HelloServlet.java&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;index.jsp&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,71,10,17,102,105,108,101,84,121,112,101,115,47,106,115,112,46,115,118,103,18,23,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,115,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-68,-2,-46,-100,-2,-1,-1,-1,-1,1,48,0]}</tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;settings.gradle (SpringLegacy)&quot;,&quot;foregroundColor&quot;:-1536119,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;e88f89&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,80,10,20,105,99,111,110,115,47,103,114,97,100,108,101,70,105,108,101,46,115,118,103,18,22,105,99,111,110,115,47,101,120,112,117,105,47,103,114,97,100,108,101,46,115,118,103,26,19,99,111,109,46,105,110,116,101,108,108,105,106,46,103,114,97,100,108,101,40,-103,-118,-46,-60,-2,-1,-1,-1,-1,1,48,0]}</tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2yiG1bMBESez6XdXxzKJBAAtuAs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c1e500c-535b-48f8-b93b-45c07ff8bb96" name="Changes" comment="" />
+      <created>1750309765395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750309765395</updated>
+      <workItem from="1750309766501" duration="112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
