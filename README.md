@@ -111,7 +111,7 @@
 | 항목                     | 기본 디렉토리           | 제출 | 심화 디렉토리           | 제출 |
 | ------------------------ | ----------------------- | :--: | ----------------------- | :--: |
 | 01 서블릿 기초           | `01_JSP(basic_advance)` |  ✅  | `01_JSP(basic_advance)` |  ✅  |
-| 02 JSP의 이해            | `02_JSP(basic)`         |  ✅  | `02_JSP(advance)`       |  ☐   |
+| 02 JSP의 이해            | `02_JSP(basic)`         |  ✅  | `02_JSP(advance)`       |  ✅  |
 | 03 서블릿 심화           | `03_JSP(basic)`         |  ☐   | `03_JSP(advance)`       |  ☐   |
 | 04 요청 포워딩, EL, JSTL | `04_JSP(basic)`         |  ✅  | `04_JSP(advance)`       |  ☐   |
 | 05 FrontController       | `05_JSP(basic_advance)` |  ☐   | `05_JSP(basic_advance)` |  ☐   |
