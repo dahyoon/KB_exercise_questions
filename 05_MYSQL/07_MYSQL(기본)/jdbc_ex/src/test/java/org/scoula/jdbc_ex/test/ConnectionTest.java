@@ -21,11 +21,11 @@ public class ConnectionTest {
         String user = "scoula";
         String password = "1234";
         con = DriverManager.getConnection(url, user, password);
-        System.out.println("2. db 연결 성공.");
+        System.out.println("2. DB 연결 성공.");
     }
 
     @Test
-    @DisplayName("DB 연결 테스트 결과 2")
+    @DisplayName("jdbc_ex에 접속한다. (자동 닫기)")
     public void testConnection2() throws ClassNotFoundException, SQLException {
         try(Connection conn = JDBCUtil.getConnection()) {
             System.out.println("DB 연결 성공!");
