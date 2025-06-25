@@ -1,7 +1,8 @@
 # KB IT's Your Life: 실습 문제 풀이
 
 ### 이름: 안다윤
-### 노트 정리: https://www.notion.so/KB-IT-s-Your-Life-1de47b3c99f180f09ad3fed64017c4d3?source=copy_link
+### 노트 정리: 
+- 노션: https://www.notion.so/KB-IT-s-Your-Life-1de47b3c99f180f09ad3fed64017c4d3?source=copy_link
 ---
 
 ### 실습 체크 리스트
