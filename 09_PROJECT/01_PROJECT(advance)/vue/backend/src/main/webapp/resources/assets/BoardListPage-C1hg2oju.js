@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as o,o as t}from"./index-QIPBGBz2.js";const r={},c={class:"BoardListPage"};function d(n,e){return t(),s("div",c,e[0]||(e[0]=[o("h1",null,"Board List Page",-1)]))}const i=a(r,[["render",d],["__scopeId","data-v-dbbfbde8"]]);export{i as default};

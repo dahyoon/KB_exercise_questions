@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as t,o}from"./index-QIPBGBz2.js";const r={},c={class:"GalleryListPage"};function l(n,e){return o(),s("div",c,e[0]||(e[0]=[t("h1",null,"Gallery List Page",-1)]))}const d=a(r,[["render",l],["__scopeId","data-v-344bd7bd"]]);export{d as default};

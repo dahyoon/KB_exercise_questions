@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as o,o as n}from"./index-QIPBGBz2.js";const r={},t={class:"ChangePasswordPage"};function c(d,e){return n(),s("div",t,e[0]||(e[0]=[o("h1",null,"Change Password Page",-1)]))}const f=a(r,[["render",c],["__scopeId","data-v-83d893f3"]]);export{f as default};

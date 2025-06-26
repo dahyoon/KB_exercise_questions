@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as t,o}from"./index-QIPBGBz2.js";const r={},c={class:"TravelListPage"};function n(_,e){return o(),s("div",c,e[0]||(e[0]=[t("h1",null,"Travel List Page",-1)]))}const d=a(r,[["render",n],["__scopeId","data-v-a809ef83"]]);export{d as default};

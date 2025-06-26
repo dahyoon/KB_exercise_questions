@@ -1,0 +1,1 @@
+import{_ as o,c as a,a as s,o as n}from"./index-QIPBGBz2.js";const t={},c={class:"LoginPage"};function r(_,e){return n(),a("div",c,e[0]||(e[0]=[s("h1",null,"Login Page",-1)]))}const i=o(t,[["render",r],["__scopeId","data-v-767688c7"]]);export{i as default};
