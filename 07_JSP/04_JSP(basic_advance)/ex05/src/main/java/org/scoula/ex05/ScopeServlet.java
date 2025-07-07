@@ -21,6 +21,7 @@ public class ScopeServlet extends HttpServlet {
         sc = config.getServletContext();
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         sc.setAttribute("scopeName", "applicationScope 값"); // Application Scope
 
@@ -32,7 +33,5 @@ public class ScopeServlet extends HttpServlet {
         request.setAttribute("member", member);
 
         request.getRequestDispatcher("scope.jsp").forward(request, response);
-
     }
-
 }

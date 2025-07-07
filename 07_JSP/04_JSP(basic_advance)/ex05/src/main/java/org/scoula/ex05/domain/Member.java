@@ -8,7 +8,7 @@ public class Member {
     public Member() {
     }
 
-    // 생성자 with 파라미터
+    // 생성자 w/ 파라미터
     public Member(String name, String userid) {
         this.name = name;
         this.userid = userid;
@@ -18,7 +18,6 @@ public class Member {
     public String getName() {
         return this.name;
     }
-
     public String getUserid() {
         return this.userid;
     }
@@ -27,7 +26,6 @@ public class Member {
     public void setName(String name) {
         this.name = name;
     }
-
     public void setUserid(String userid) {
         this.userid = userid;
     }
