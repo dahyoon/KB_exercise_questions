@@ -143,3 +143,9 @@
 - Note: 원래 06 Rest, 07 OpenAPI 분리되어 있었는데 강사님이 06 Rest, OpenAPI로 합치심
 
 ---
+
+### 단원 08 - Spring - Vue 연동 [🔥진행중🔥]
+
+- 디렉토리: `09_PROJECT/`
+
+---
