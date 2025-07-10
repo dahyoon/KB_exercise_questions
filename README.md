@@ -118,7 +118,7 @@
 | 02 JSP의 이해            | `02_JSP(basic)`         |  ✅  | `02_JSP(advance)`       |  ✅  |
 | 03 서블릿 심화           | `03_JSP(basic_advance)` |  ✅  | `03_JSP(basic_advance)` |  ✅  |
 | 04 요청 포워딩, EL, JSTL | `04_JSP(basic_advance)` |  ✅  | `04_JSP(basic_advance)` |  ✅  |
-| 05 FrontController       | `05_JSP(basic_advance)` |  ☐   | `05_JSP(basic_advance)` |  ☐   |
+| 05 FrontController       | `05_JSP(basic_advance)` |  ✅  | `05_JSP(basic_advance)` |  ✅  |
 
 ---
 
