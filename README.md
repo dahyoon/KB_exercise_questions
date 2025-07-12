@@ -108,7 +108,7 @@
 
 ---
 
-### 단원 06 - Servlet, JSP, JSTL 기반 서버 프로그래밍 [🔥진행중🔥]
+### 단원 06 - Servlet, JSP, JSTL 기반 서버 프로그래밍 [✨완료✨]
 
 - 디렉토리: `07_JSP/`
 
@@ -128,7 +128,7 @@
 
 | 항목                               | 기본 디렉토리        | 제출 | 심화 디렉토리          | 제출 |
 | ---------------------------------- | -------------------- | :--: | ---------------------- | :--: |
-| 01 Spring 이해                     | `01_SPRING(basic)`   |  ✅  | `01_SPRING(advance)`   |  ☐   |
+| 01 Spring 이해                     | `01_SPRING(basic)`   |  ✅  | `01_SPRING(advance)`   |  ✅  |
 | 02-1 Spring MVC                    | `02-1_SPRING(basic)` |  ✅  | `02-1_SPRING(advance)` |  ☐   |
 | 02-2 Spring MVC                    | `02-2_SPRING(basic)` |  ✅  | `02-2_SPRING(advance)` |  ☐   |
 | 03 Spring-MyBatis 연동             | `03_SPRING(basic)`   |  ✅  | `03_SPRING(advance)`   |  ☐   |
