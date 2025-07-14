@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
-<!--  Appender, Layout 설정  -->
+
+    <!-- Appender, Layout 설정 -->
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%=5level %c(%M:%L) - %m%n"/>
+            <PatternLayout pattern=" %-5level %c(%M:%L) - %m%n"/>
         </Console>
     </Appenders>
 
-<!--  Logger 설정  -->
+    <!-- Logger 설정 -->
     <Loggers>
         <Root level="INFO">
-            <ApperderRef ref="console"/>
+            <AppenderRef ref="console"/>
         </Root>
         <Logger name="org.scoula" level="INFO" additivity="false">
             <AppenderRef ref="console"/>
@@ -19,4 +20,5 @@
             <AppenderRef ref="console"/>
         </Logger>
     </Loggers>
+
 </Configuration>

@@ -11,10 +11,9 @@ repositories {
 }
 
 ext {
+    junitVersion = '5.10.2'
     springVersion = '5.3.37'
     lombokVersion = '1.18.30'
-    log4jVersion = '2.22.1'
-    junitVersion = '5.10.2'
 }
 
 sourceCompatibility = '1.17'
@@ -25,9 +24,9 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    // Spring
+    // 스프링
     implementation ("org.springframework:spring-context:${springVersion}")
-            {exclude group: 'commons-logging', module: 'commons-logging'}
+            { exclude group: 'commons-logging', module: 'commons-logging' }
     implementation "org.springframework:spring-webmvc:${springVersion}"
     implementation 'javax.inject:javax.inject:1'
 
@@ -40,12 +39,19 @@ dependencies {
     compileOnly 'javax.servlet.jsp:jsp-api:2.1'
     implementation 'javax.servlet:jstl:1.2'
 
-    // Logging
-    implementation "org.apache.logging.log4j:log4j-api:${log4jVersion}"
-    implementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
-    implementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
+    // Logging // 이미 Log4j2 쓰고 있으므로 삭제해도 무방
+    // implementation 'org.slf4j:slf4j-api:2.0.9'
+    // runtimeOnly 'org.slf4j:jcl-over-slf4j:2.0.9'
+    // runtimeOnly 'org.slf4j:slf4j-log4j12:2.0.9'
+    // implementation 'log4j:log4j:1.2.17'
 
-    // xml 내 한글 처리
+    // Log4j2
+    implementation 'org.apache.logging.log4j:log4j-api:2.18.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.18.0'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    //implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.18.0'
+
+    // xml내 한글 처리
     implementation 'xerces:xercesImpl:2.12.2'
 
     // Lombok
@@ -57,12 +63,12 @@ dependencies {
 
     // 테스트
     testImplementation "org.springframework:spring-test:${springVersion}"
-    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly"org.projectlombok:lombok:${lombokVersion}"
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
-
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
+
 
 test {
     useJUnitPlatform()
