@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6b6e408-ba1b-4707-a3d9-93956be64a71" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/app/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/app/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/app/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/config/ProjectConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/config/ProjectConfig3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex01/src/main/java/org/scoula/domain/Parrot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/beans/Parrot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/beans/Parrot2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/beans/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/beans/Person2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/beans/Person3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/config/ProjectConfig2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../01_SPRING(basic)/ex02/src/main/java/org/scoula/main/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/app/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/app/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/app/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/config/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/config/ProjectConfig2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/config/ProjectConfig3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex01/src/main/java/org/scoula/domain/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/beans/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/beans/Parrot2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/beans/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/beans/Person2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/beans/Person3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/config/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/config/ProjectConfig2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/main/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(baisc)/ex02/src/main/java/org/scoula/main/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/app/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/app/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/app/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/app/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/app/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/config/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/config/ProjectConfig2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/config/ProjectConfig3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/config/ProjectConfig4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/config/ProjectConfig5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/domain/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/domain/Parrot4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex01/src/main/java/org/scoula/domain/Parrot5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Parrot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Parrot4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Parrot5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Parrot6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Person4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Person5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/beans/Person6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/config/ProjectConfig6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/main/Main4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/main/Main5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex02/src/main/java/org/scoula/main/Main6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/Chef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/java/org/scoula/ex03/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/test/java/org/scoula/RestaurantTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01_SPRING(practise)/ex03/src/test/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/java/org/scoula/ex01/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(advance)/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/ex01/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/ex01/config/RoofConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/ex01/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/java/org/scoula/ex01/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-1_SPRING(basic)/ex01/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/ex03/controller/SampleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/java/org/scoula/ex03/dto/SampleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/basic.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/basicOnlyGet.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/ex04.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/ex05.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/ex06-2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02-2_SPRING(basic)/ex03/src/main/webapp/WEB-INF/views/sample/ex06.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/modules/SpringLegacy.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../02_SPRING(basic_advance)/study/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/java/org/scoula/ex04/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/test/java/org/scoula/config/DataSourceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_SPRING(basic)/ex04/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/resources/org/scoula/board/mapper/MyBatisMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/test/java/org/scoula/board/mapper/BoardMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_SPRING(basic)/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/board/dto/BoardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/controller/BoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/board/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/board/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/layouts/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/layouts/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/WEB-INF/views/layouts/menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/resources/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/resources/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/resources/js/board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/main/webapp/resources/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/board/controller/BoardControllerTest_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/board/mapper/BoardMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/board/service/BoardServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_SPRING(basic)/board/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/board/domain/BoardVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/board/dto/BoardDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/board/mapper/BoardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/board/service/BoardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/board/service/BoardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/Clouds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/Coord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/Sys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/WeatherDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/WeatherItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/java/org/scoula/weather/dto/Wind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/org/scoula/board/mapper/BoardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/layouts/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/layouts/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/WEB-INF/views/layouts/menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/resources/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/resources/images/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/resources/js/board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/main/webapp/resources/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/board/controller/BoardControllerTest_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/board/mapper/BoardMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/board/service/BoardServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_SPRING(basic)/boardapi/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/advice/LogAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/config/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/controller/ChatController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/domain/ChatMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/domain/GreetingMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/sample/service/SampleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/java/org/scoula/sample/service/SampleServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/main/webapp/resources/js/stomp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_SPRING(basic_advance)/aopex/src/test/java/org/scoula/sample/service/SampleServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/ex04/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/template-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/controller/SecurityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/mapper/TimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/security/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/java/org/scoula/security/config/SecurityInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/resources/log4jdbc.log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/resources/org/scoula/mapper/MapperTemplate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/error_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/security/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/security/all.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/security/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/security/logout.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/main/webapp/WEB-INF/views/security/member.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/test/java/org/scoula/config/RootConfigTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/test/java/org/scoula/mapper/TimeMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/test/java/org/scoula/persistence/JDBCTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_SPRING(basic_advance)/secserver/src/test/java/org/scoula/security/PasswordEncoderTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpringLegacy" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2zmHaMf0aPGVHuItBiphvn5E48X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.SpringLegacy.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/dayoonz/Desktop/fullstack/08_SPRING/01_SPRING(advance)/SpringLegacy",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ex01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ex01" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="ex01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="ex01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="ex01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.105" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.105" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dconsole.encoding=UTF-8 -Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.scoula : SpringLegacy-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="07011021-6a56-4d37-bc07-8d2c80d13297" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55826" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.scoula : SpringLegacy-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6b6e408-ba1b-4707-a3d9-93956be64a71" name="Changes" comment="" />
+      <created>1752343711986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752343711986</updated>
+      <workItem from="1752343713071" duration="101000" />
+      <workItem from="1752343828171" duration="6000" />
+      <workItem from="1752343862470" duration="147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
