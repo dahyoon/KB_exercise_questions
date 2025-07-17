@@ -130,7 +130,7 @@
 | ---------------------------------- | -------------------- | :--: | ---------------------- | :--: |
 | 01 Spring 이해                     | `01_SPRING(basic)`   |  ✅  | `01_SPRING(advance)`   |  ✅  |
 | 02-1 Spring MVC                    | `02_1_SPRING(basic)` |  ✅  | `02_1_SPRING(advance)` |  ✅  |
-| 02-2 Spring MVC                    | `02-2_SPRING(basic)` |  ✅  | `02-2_SPRING(advance)` |  ☐   |
+| 02-2 Spring MVC                    | `02_2_SPRING(basic_advance)` |  ✅  | `02_2_SPRING(basic_advance)` |  ✅  |
 | 03 Spring-MyBatis 연동             | `03_SPRING(basic)`   |  ✅  | `03_SPRING(advance)`   |  ☐   |
 | 04 Spring 기본 게시판              | `04_SPRING(basic)`   |  ✅  | `04_SPRING(advance)`   |  ☐   |
 | 05 Spring 기본 게시판, 파일 업로드 | `05_SPRING(basic)`   |  ✅  | `05_SPRING(advance)`   |  ☐   |
