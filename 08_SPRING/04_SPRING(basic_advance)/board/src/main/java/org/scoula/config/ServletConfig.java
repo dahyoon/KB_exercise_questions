@@ -15,7 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = {
         "org.scoula.controller",
         "org.scoula.ex03.controller",
-        "org.scoula.exception"
+        "org.scoula.exception",
+        "org.scoula.board.controller"
 })	// Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
     //	Servlet ${WEB_XML_VERSION} 파일 업로드 사용시 - MultipartResolver Bean 등록
