@@ -126,19 +126,19 @@
 
 - 디렉토리: `08_SPRING/`
 
-| 항목                               | 기본 디렉토리        | 제출 | 심화 디렉토리          | 제출 |
-| ---------------------------------- | -------------------- | :--: | ---------------------- | :--: |
-| 01 Spring 이해                     | `01_SPRING(basic)`   |  ✅  | `01_SPRING(advance)`   |  ✅  |
-| 02-1 Spring MVC                    | `02_1_SPRING(basic)` |  ✅  | `02_1_SPRING(advance)` |  ✅  |
+| 항목                               | 기본 디렉토리                | 제출 | 심화 디렉토리                | 제출 |
+| ---------------------------------- | ---------------------------- | :--: | ---------------------------- | :--: |
+| 01 Spring 이해                     | `01_SPRING(basic)`           |  ✅  | `01_SPRING(advance)`         |  ✅  |
+| 02-1 Spring MVC                    | `02_1_SPRING(basic)`         |  ✅  | `02_1_SPRING(advance)`       |  ✅  |
 | 02-2 Spring MVC                    | `02_2_SPRING(basic_advance)` |  ✅  | `02_2_SPRING(basic_advance)` |  ✅  |
 | 03 Spring-MyBatis 연동             | `03_SPRING(basic_advance)`   |  ✅  | `03_SPRING(basic_advance)`   |  ✅  |
 | 04 Spring 기본 게시판              | `04_SPRING(basic_advance)`   |  ✅  | `04_SPRING(basic_advance)`   |  ✅  |
-| 05 Spring 기본 게시판, 파일 업로드 | `05_SPRING(basic)`   |  ✅  | `05_SPRING(advance)`   |  ☐   |
-| 06 Rest, OpenAPI                   | `06_SPRING(basic)`   |  ✅  | `06_SPRING(advance)`   |  ☐   |
-| 08 Spring AOP                      | `08_SPRING(basic)`   |  ✅  | `08_SPRING(advance)`   |  ✅  |
-| 09 Spring Security Form 인증       | `09_SPRING(basic)`   |  ✅  | `09_SPRING(advance)`   |  ☐   |
-| 10 Spring Security JWT 인증        | `10_SPRING(basic)`   |  ✅  | `10_SPRING(advance)`   |  ✅  |
-| 11 Spring Security JWT 인증2       | `11_SPRING(basic)`   |  ✅  | `11_SPRING(advance)`   |  ✅  |
+| 05 Spring 기본 게시판, 파일 업로드 | `05_SPRING(basic)`           |  ✅  | `05_SPRING(advance)`         |  ☐   |
+| 06 Rest, OpenAPI                   | `06_SPRING(basic)`           |  ✅  | `06_SPRING(advance)`         |  ☐   |
+| 08 Spring AOP                      | `08_SPRING(basic)`           |  ✅  | `08_SPRING(advance)`         |  ✅  |
+| 09 Spring Security Form 인증       | `09_SPRING(basic)`           |  ✅  | `09_SPRING(advance)`         |  ☐   |
+| 10 Spring Security JWT 인증        | `10_SPRING(basic)`           |  ✅  | `10_SPRING(advance)`         |  ✅  |
+| 11 Spring Security JWT 인증2       | `11_SPRING(basic)`           |  ✅  | `11_SPRING(advance)`         |  ✅  |
 
 - Note: 원래 06 Rest, 07 OpenAPI 분리되어 있었는데 강사님이 06 Rest, OpenAPI로 합치심
 

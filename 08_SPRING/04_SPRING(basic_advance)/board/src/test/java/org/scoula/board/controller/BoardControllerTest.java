@@ -5,8 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.scoula.board.service.BoardService;
-import org.scoula.config.ServletConfig;
 import org.scoula.config.RootConfig;
+import org.scoula.config.ServletConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -14,6 +14,11 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+<<<<<<< HEAD
+=======
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestParam;
+>>>>>>> 5154a439f0506ef4d8c57fdccb803521c71b163c
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,50 +39,51 @@ class BoardControllerTest {
 
     private MockMvc mockMvc;
 
-    @BeforeEach
+    @BeforeEach // 각 테스트 실행 전에 mockMvc 초기화 // 테스트 마다 새로운 MockMvc를 준비하므로 상태 간섭 없이 테스트 가능
     public void setup() {
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build();
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build(); // 웹 컨텍스트 기반으로 설정
     }
 
     @Test
-    public void list() throws Exception {
-        log.info(mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
-                .andReturn() // MvcResult 반환
-                .getModelAndView() // ModelAndView 반환
-                .getModelMap() // Model qksghks
-        );
+    void create() throws Exception {
+        String viewName = mockMvc.perform(MockMvcRequestBuilders.get("/board/create"))  // ResultActions 반환
+                .andReturn()        // MvcResult 반환
+                .getModelAndView()  // ModelAndView 반환
+                .getViewName();
+        log.info(viewName);
     }
 
     @Test
-    public void create() throws Exception {
+    public void postCreate() throws Exception {
         String resultPage = mockMvc.perform(
                 MockMvcRequestBuilders.post("/board/create")
-                        .param("title", "테스트 새글 제목")
-                        .param("content", "테스트 새글 내용")
+                        .param("title", "테스트 새 글 제목")
+                        .param("content", "테스트 새 글 내용")
                         .param("writer", "user1")
-        ).andReturn()
+        )
+                .andReturn()
                 .getModelAndView()
                 .getViewName();
-        log.info("result page: {}", resultPage);
+        log.info(resultPage);
     }
 
     @Test
     public void get() throws Exception {
-        log.info(
-                mockMvc.perform(MockMvcRequestBuilders.get("/board/get").param("no", "1"))
-                        .andReturn()
-                        .getModelAndView()
-                        .getModelMap()
-        );
+        ModelMap model = mockMvc.perform(
+                MockMvcRequestBuilders.get("/board/get").param("no", "1"))
+                .andReturn()
+                .getModelAndView()
+                .getModelMap();
+        log.info(model);
     }
 
     @Test
     public void update() throws Exception {
         String resultPage = mockMvc.perform(
                 MockMvcRequestBuilders.post("/board/update")
-                        .param("no", "1")
-                        .param("title", "수정된 제목")
-                        .param("content", "수정된 글")
+                        .param("no","1")
+                        .param("title", "수정된 테스트 새 글 제목")
+                        .param("content", "수정된 테스트 새 글 내용")
                         .param("writer", "user00")
         )
                 .andReturn()
