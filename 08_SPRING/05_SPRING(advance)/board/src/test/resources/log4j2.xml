@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+    <!-- Appender, Layout 설정 -->
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern=" %-5level %c(%M:%L) - %m%n"/>
+        </Console>
+    </Appenders>
+    <!-- Logger 설정 -->
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="console"/>
+        </Root>
+        <Logger name="org.scoula" level="INFO" additivity="false" >
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="org.springframework" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <!-- 일반적인 jdbc 로그는 WARN 레벨로 설정하여 불필요한 로그 제거 -->
+        <Logger name="jdbc" level="WARN" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <!-- 핵심 로그만 INFO 레벨로 출력 - 실행된 SQL과 매개변수 값 -->
+        <Logger name="jdbc.sqlonly" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <!-- 필요에 따라 SQL 실행 시간도 확인 가능 -->
+        <!-- <Logger name="jdbc.sqltiming" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger> -->
+
+        <!-- 상세 로그들은 WARN 레벨로 설정하여 숨김 -->
+        <!--
+        <Logger name="jdbc.audit" level="WARN" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="jdbc.connection" level="WARN" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="jdbc.resultset" level="WARN" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        -->
+    </Loggers>
+</Configuration>

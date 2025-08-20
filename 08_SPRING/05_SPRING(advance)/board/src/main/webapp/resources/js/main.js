@@ -1,0 +1,1 @@
+// JavaScript 공통 부분
